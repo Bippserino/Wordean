@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordean - Igra riječi</title>
+    <link rel="stylesheet" href="../css/game.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../scripts/game.js"></script>
+    <link rel="shortcut icon" href="../img/logo-favicon.svg" type="image/x-icon">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BY3YDS0H5D"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-BY3YDS0H5D');
+        </script>
+</head>
+    <body>
+        <div class="stats-overlay unselectable">
+            <div class="stats-wrapper">
+                <div class="stats-window">
+                    <div class="exit-button">
+                        <img src="../img/exit.svg" alt="exit">
+                    </div>
+                    <div class="percentage-wrapper">
+                    </div>
+                    <div class="time">
+                        <p>VRIJEME DO NOVE RIJEČI:</p>
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-window unselectable">
+            <div class="buttons">
+                <div class="stats-button">
+                    <img class="header-button" src="../img/stats.svg" alt="statistics">
+                </div>
+                <div class="settings-button">
+                    <img class="header-button" src="../img/settings.svg" alt="settings">
+                </div>
+            </div>
+            <div class="logo">
+                <a href="http://wordean.bojanmandic.com/">
+                    <img src="../img/logo-favicon.svg" alt="">
+                </a>
+             </div>
+            <div class="game-grid">
+                <div class="cell cell-11"></div>
+                <div class="cell cell-12"></div>
+                <div class="cell cell-13"></div>
+                <div class="cell cell-14"></div>
+                <div class="cell cell-15"></div>
+                <div class="cell cell-21"></div>
+                <div class="cell cell-22"></div>
+                <div class="cell cell-23"></div>
+                <div class="cell cell-24"></div>
+                <div class="cell cell-25"></div>
+                <div class="cell cell-31"></div>
+                <div class="cell cell-32"></div>
+                <div class="cell cell-33"></div>
+                <div class="cell cell-34"></div>
+                <div class="cell cell-35"></div>
+                <div class="cell cell-41"></div>
+                <div class="cell cell-42"></div>
+                <div class="cell cell-43"></div>
+                <div class="cell cell-44"></div>
+                <div class="cell cell-45"></div>
+                <div class="cell cell-51"></div>
+                <div class="cell cell-52"></div>
+                <div class="cell cell-53"></div>
+                <div class="cell cell-54"></div>
+                <div class="cell cell-55"></div>
+                <div class="cell cell-61"></div>
+                <div class="cell cell-62"></div>
+                <div class="cell cell-63"></div>
+                <div class="cell cell-64"></div>
+                <div class="cell cell-65"></div>
+            </div>
+            <div class="hint-wrapper">
+                <button class="reveal-hint">POMOĆ</button>
+                <h2 class="hint invisible"></h2>
+            </div>
+
+            <div class="keyboard">
+                <div class="keyboard-row">
+                    <button class="key q">Q</button>
+                    <button class="key w">W</button>
+                    <button class="key e">E</button>
+                    <button class="key r">R</button>
+                    <button class="key t">T</button>
+                    <button class="key z">Z</button>
+                    <button class="key u">U</button>
+                    <button class="key i ">I</button>
+                    <button class="key o">O</button>
+                    <button class="key p">P</button>
+                    <button class="key š">Š</button>
+                    <button class="key đ">Đ</button>
+                </div>
+                <div class="keyboard-row">
+                    <button class="key a">A</button>
+                    <button class="key s">S</button>
+                    <button class="key d">D</button>
+                    <button class="key f">F</button>
+                    <button class="key g">G</button>
+                    <button class="key h">H</button>
+                    <button class="key j">J</button>
+                    <button class="key k">K</button>
+                    <button class="key l">L</button>
+                    <button class="key č">Č</button>
+                    <button class="key ć">Ć</button>
+                    <button class="key ž">Ž</button>
+                </div>
+                <div class="keyboard-row">
+                    <button class="key enter">POTVRDI</button>
+                    <button class="key y">Y</button>
+                    <button class="key x">X</button>
+                    <button class="key c">C</button>
+                    <button class="key v">V</button>
+                    <button class="key b">B</button>
+                    <button class="key n">N</button>
+                    <button class="key m">M</button>
+                    <button class="key backspace">BRIŠI</button>
+                </div>
+            </div>
+            <a class="copyright" href="https://bojanmandic.com/">©<span></span> BOJAN MANDIĆ</a>
+        </div>
+    </body>
+</html>

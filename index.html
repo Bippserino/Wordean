@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wordean - Igra riječi</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./scripts/game.js"></script>
+        <script src="./scripts/cosmetics.js"></script>
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="shortcut icon" href="img/logo-favicon.svg" type="image/x-icon">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BY3YDS0H5D"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-BY3YDS0H5D');
+        </script>
+    </head>
+    <body>
+        <a href="#logo">
+            <div class="invisible-button">            
+            </div>
+        </a>
+        <div class="container unselectable">
+            <section class="logo-section" id="logo">
+                <div class="logo">
+                    <div class="logo-wrapper">
+                        <img src="img/logo-favicon.svg" draggable="false"/>  
+                    </div>
+                    <div class="logo-text">
+                        <h1>WORDEAN</h1>
+                        <h2>IGRA RIJEČI</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rules-section" id="pravila">
+               <div class="rules-wrapper">
+                    <h2>PRAVILA</h2>
+                    <div class="rules-container">
+                        <p>Pogodite riječ u 6 pokušaja.</p>
+                        <p>Svaki pokušaj mora biti važeća riječ od pet slova.</p>
+                        <p>Nakon svakog pokušaja, boja polja iza pojedinih slova će se promijeniti i otkriti koliko je blizu traženoj Vaša riječ.</p>
+                        <p>Nova riječ je dostupna svaki dan.</p>
+                        <p>Jučerašnja riječ bila je: <span>motor</span></p>
+                    </div>
+               </div>
+            </section>
+            <section class="example-section" id="primjeri">
+                <div class="example-wrapper">
+                    <h2>PRIMJER</h2>
+                    <div class="example-container">
+                        <img src="img/uciti.svg" alt="uciti" draggable="false">
+                        <p>Slovo <b>U</b> se nalazi u zadanoj riječi i na točnom mjestu.</p>
+                        <img src="img/super.svg" alt="super" draggable="false">
+                        <p>Slovo <b>U</b> se nalazi u zadanoj riječi, ali nije na točnom mjestu.</p>
+                        <img src="img/skije.svg" alt="skije" draggable="false">
+                        <p>Slovo <b>J</b> se ne nalazi u zadanoj riječi.</p>    
+                    </div>
+               </div>
+            </section>
+            <section class="play-section unselectable">
+                <div class="play-link">
+                    <div class="play-wrapper">
+                        <a href="./igraj">
+                            <img src="img/play.svg" alt="igraj" draggable="false">
+                        </a>
+                    </div>
+                </div>
+                <a class="copyright" href="https://bojanmandic.com/">©<span></span> BOJAN MANDIĆ</a>
+            </section>            
+        </div>
+    </body>
+</html>
+
+<!-- set on resize listener!!! -->

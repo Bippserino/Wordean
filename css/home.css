@@ -1,0 +1,254 @@
+@font-face {
+    font-family: "AXIS";
+    src: url('../fonts/Axis/AXIS_Extra_Bold_800.eot') format('embedded-opentype'),
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url('../fonts/Gilroy/Gilroy-ExtraBold_800.eot') format('embedded-opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --light-blue: #59a4d6;
+    --dark-blue: #014e64;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container {
+    background-color: var(--light-blue);
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    position: relative;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.logo {
+    z-index: 500;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.logo-wrapper {
+    width: 30vw;
+    margin: 0 auto;
+    max-width: 40vh;
+    min-width: 10vh;
+}
+
+.logo-wrapper>img {
+    width: 100%;
+}
+
+.logo-text {
+    text-align: center;
+}
+
+.logo-text>h1 {
+    font-family: "AXIS", sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+
+.logo-text>h2 {
+    color: var(--dark-blue);
+    font-size: 2rem;
+    font-family: "Gilroy-Bold", sans-serif;
+}
+
+.rules-section, .example-section, .play-section {
+    position: relative;
+}
+
+.rules-wrapper, .example-wrapper {
+    height: 86vh;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-color: var(--dark-blue);
+    text-align: center;
+    color: white;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rules-wrapper>h2, .example-wrapper>h2 {
+    margin-bottom:2rem;
+    font-size: calc(18px + 2vmax);
+    text-decoration: underline;
+    font-family: "Gilroy-Bold", sans-serif;
+}
+
+.rules-container>p, .example-container>p {
+    margin-bottom: 2rem;
+}
+
+.rules-container, .example-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.rules-container>p, .rules-container span, .example-container>p, .example-container b{
+    font-size: calc(8px + 2vmax);
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+.example-container p {
+    margin-bottom: 2rem;
+}
+
+.example-container b {
+    font-weight: bold;
+}
+
+.rules-container span {
+    text-decoration: underline;
+}
+
+.example-container>img{
+    max-height: 10vh;
+    width: 90%;
+    max-width: calc(5.32*5vh);
+    margin-bottom: 1rem;
+}
+
+.play-link {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-wrapper {
+    border-radius: 100%;
+    background-color: var(--dark-blue);
+    width: 90vw;
+    height: 90vw;
+    max-width: 30vh;
+    max-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 10px 2px #000000; 
+    box-shadow: 0px 0px 10px 2px #000000;
+    transition: 0.5s;
+}
+
+.play-wrapper img {
+    width: 100%;
+    transition: 0.75s;
+}
+
+.invisible-button {
+    position: fixed;
+    z-index: 1000;
+}
+
+.copyright {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.scale-up-small {
+    transform: scale(1.5);
+}
+
+.scale-up-big {
+    transform: scale(2);
+}
+
+.box-shadow-down {
+    -webkit-box-shadow: 0px 3px 10px 2px #000000; 
+    box-shadow: 0px 3px 10px 2px #000000;
+}
+
+@media only screen and (min-width: 375px) {
+ 
+}
+
+@media only screen and (min-width: 425px) {
+    .logo-text h1 {
+        font-size: 4rem;
+    }
+
+    .logo-text h2 {
+        font-size: 2.625rem;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .logo-text h1 {
+        font-size: 6rem;
+    }
+
+    .logo-text h2 {
+        font-size: 4rem;
+    }
+
+    .rules-wrapper h2, .example-wrapper h2 {
+        font-size: calc(30px + 1vmax);
+        margin-top: 2rem;
+    }
+
+    .rules-container p, .rules-container span {
+        font-size: calc(20px + 1vmax);
+    }
+
+    .example-container img {
+        max-width: calc(5.32*7vh);
+    }
+
+    .example-wrapper, .rules-wrapper {
+        width: 90%;
+        border-radius: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .example-wrapper, .rules-wrapper {
+        width: 60%;
+    }
+
+    .example-container p, .rules-container span {
+        font-size: calc(15px + 1vmax);
+    }
+}
+
+.unselectable {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
